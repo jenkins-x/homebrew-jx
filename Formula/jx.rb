@@ -10,7 +10,4 @@ class Jx < Formula
     bin.install name
   end
 
-  test do
-    system bin/name, "version"
-  end
 end
