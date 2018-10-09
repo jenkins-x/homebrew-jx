@@ -2,9 +2,7 @@ pipeline {
   environment {
     GH_CREDS = credentials('jenkins-x-github')
   }
-  agent {
-    label "jenkins-go"
-  }
+  agent any
   stages {
     stage('CI Build') {
       when {
@@ -12,9 +10,7 @@ pipeline {
       }
       steps {
         checkout scm
-        container('go') {
-          sh "echo TODO"
-        }
+        sh "echo TODO"
       }
     }
   }
