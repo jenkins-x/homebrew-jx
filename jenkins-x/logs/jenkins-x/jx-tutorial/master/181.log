@@ -73,3 +73,37 @@ org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstruc
 [Pipeline] // stage
 [Pipeline] withCredentials
 [Pipeline] {
+[Pipeline] stage
+[Pipeline] { (CI Build)
+Stage "CI Build" skipped due to when conditional
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build and Push Release)
+[Pipeline] git
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/jenkins-x/jx-tutorial # timeout=10
+Fetching upstream changes from https://github.com/jenkins-x/jx-tutorial
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/jenkins-x/jx-tutorial +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 60cf4b017aab4f60423329439778656b9be0aa40 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 60cf4b017aab4f60423329439778656b9be0aa40
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D master # timeout=10
+ > git checkout -b master 60cf4b017aab4f60423329439778656b9be0aa40
+Commit message: "Merge pull request #375 from jenkins-x/updatebot-de75d266-989f-4cf7-9855-09563d0ddf94"
+First time build. Skipping changelog.
+[Pipeline] echo
+release build
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
