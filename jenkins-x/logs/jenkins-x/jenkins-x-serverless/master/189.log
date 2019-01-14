@@ -11,3 +11,4 @@ Step: build-step-jenkins:
 Picked up _JAVA_OPTIONS: -Xmx1024m
 Started
 Running in Durability level: PERFORMANCE_OPTIMIZED
+  14.774 [id=33]	WARNING	i.f.k.c.i.VersionUsageUtils#alert: The client is using resource type 'customresourcedefinitions' with unstable version 'v1beta1'
