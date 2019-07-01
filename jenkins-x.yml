@@ -1,1 +1,9 @@
 buildPack: nop
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      preBuild:
+        steps:
+          - name: check-shasum
+            container: busybox
+            command: jx/scripts/test.sh

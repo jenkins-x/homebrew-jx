@@ -1,0 +1,14 @@
+#!/bin/bash
+
+VERSION=$(cat Formula/jx.rb | grep "version \"" | sed 's/version//' | sed 's/"//g' | tr -d '[:space:]')
+echo $VERSION
+
+SHA=$(cat Formula/jx.rb | grep "sha256 \"" | sed 's/sha256//' | sed 's/"//g' | tr -d '[:space:]')
+echo $SHA
+
+mkdir -p build
+
+pushd build
+  curl -f -L -o jx-darwin-amd64.tar.gz https://github.com/jenkins-x/jx/releases/download/v${VERSION}/jx-darwin-amd64.tar.gz
+  echo "$SHA  jx-darwin-amd64.tar.gz" | shasum -c
+popd
