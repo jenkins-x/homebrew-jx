@@ -5,5 +5,5 @@ pipelineConfig:
       preBuild:
         steps:
           - name: check-shasum
-            container: busybox
+            container: gcr.io/jenkinsxio/builder-go:0.1.537
             command: jx/scripts/test.sh
