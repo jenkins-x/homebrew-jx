@@ -4,7 +4,7 @@ class Jx < Formula
   version "2.0.372"
    
   url "https://github.com/jenkins-x/jx/releases/download/v#{version}/jx-darwin-amd64.tar.gz"
-  sha256 "c3201fafaa2513ea3cb4fdb51be930bdc2242b8e2333fc897ef740718f31c4bc"
+  sha256 "4925dc3b752736f45e6e6c66decddf1b3c8036439a1a62b9544d8947b195e7c6"
 
   def install
     bin.install name
