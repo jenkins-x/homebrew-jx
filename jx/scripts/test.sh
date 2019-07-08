@@ -3,7 +3,7 @@
 VERSION=$(cat Formula/jx.rb | grep "version \"" | sed 's/version//' | sed 's/"//g' | tr -d '[:space:]')
 echo $VERSION
 
-SHA=$(cat Formula/jx.rb | grep "sha256 \"" | sed 's/sha256//' | sed 's/"//g' | tr -d '[:space:]')
+SHA=$(cat Formula/jx.rb | grep "sha256 \"" | head -n 1 | sed 's/sha256//' | sed 's/"//g' | tr -d '[:space:]')
 echo $SHA
 
 mkdir -p build
