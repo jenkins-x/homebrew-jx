@@ -4,10 +4,12 @@ pipelineConfig:
     pullRequest:
       preBuild:
         steps:
-        - command: jx/scripts/test.sh
-          container: gcr.io/jenkinsxio/builder-go:0.1.537
+        - command: ./jx/scripts/test.sh
+          container: gcr.io/jenkinsxio/builder-go:0.1.550
           name: check-shasum
     release:
       build:
         steps:
-        - command: ./scripts/jx/changelog.sh
+        - command: ./jx/scripts/changelog.sh
+          container: gcr.io/jenkinsxio/builder-go:0.1.550
+          name: changelog
