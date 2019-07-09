@@ -4,13 +4,8 @@ class Jx < Formula
   homepage "https://jenkins-x.io/"
   version "2.0.427"
 
-  if OS.mac?
-    url "http://github.com/jenkins-x/jx/releases/download/v2.0.427/jx-darwin-amd64.tar.gz"
-    sha256 "b611152eaddd6a7b9337409a57ccf05df9f99a600befb3eab6768d73f2c6fbc6"
-  elsif OS.linux?
-    url "http://github.com/jenkins-x/jx/releases/download/v2.0.427/jx-linux-amd64.tar.gz"
-    sha256 "9b70350d17e49500724e4bb4c4494930fa245bb66851ad940cea0938ffdac34b"
-  end
+  url "http://github.com/jenkins-x/jx/releases/download/v#{version}/jx-darwin-amd64.tar.gz"
+  sha256 "b611152eaddd6a7b9337409a57ccf05df9f99a600befb3eab6768d73f2c6fbc6"
 
   def install
     bin.install name
@@ -24,7 +19,4 @@ class Jx < Formula
     prefix.install_metafiles
   end
 
-  test do
-    system "#{bin}/jx --version"
-  end
 end
