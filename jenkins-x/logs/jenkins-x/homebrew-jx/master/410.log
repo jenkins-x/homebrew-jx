@@ -1,0 +1,68 @@
+Step: build-step-credential-initializer-tdb57:
+
+Unable to retrieve container logs for docker://5d78a145dd5dc66a5f91869d67066a74bf00e96019624b2414888faa993fac30
+Step: build-step-working-dir-initializer-knlb5:
+
+Unable to retrieve container logs for docker://71a06f4bc45b0425001347a0c901146413bb9ac55d92472ccdcbbc863c7d1702
+Step: build-step-place-tools:
+
+Unable to retrieve container logs for docker://2bebfe850190ab423ffa470c994a66676b4eda60a082b52b98a443eead0ff612
+Step: build-step-git-source-jenkins-x-homebrew-**-master-te-sdmrh:
+
+{"level":"warn","ts":1565211809.9369826,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565211811.5400314,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/homebrew-** @ v0.0.426 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-07T21:03:32Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:494c98ebd14c6a16fad51e8bd9a8967098de8870
+time="2019-08-07T21:03:32Z" level=warning msg="no SHAs to merge, falling back to initial cloned commit"
+Step: build-step-setup-**-git-credentials:
+
+Generated Git credentials file /builder/home/git/credentials
+Step: build-step-build-dummy-release:
+
+Release
+Step: build-step-build-changelog:
+
+Converted /workspace/source to an unshallow repository
+DEBUG: Using helmBinary helm with feature flag: template-mode
+Generating change log from git ref ad7e30e5c89042a0bf585323d7c77fb005cdf1f4 => 494c98ebd14c6a16fad51e8bd9a8967098de8870
+DEBUG: merging pipeline secrets with local secrets
+DEBUG: merging pipeline secrets with local secrets
+DEBUG: Found commits:
+DEBUG:   commit 494c98ebd14c6a16fad51e8bd9a8967098de8870
+DEBUG:   Author: ************* <35031835+*************@users.noreply.github.com>
+DEBUG:   Date: Wed Aug  7 22:02:03 2019
+DEBUG:       
+Merge pull request #1601 from *************/bump-brew-version-5c222932-b954-11e9-8998-c2d45459c59d
+
+chore(deps): bump https://github.com/jenkins-x/**.git from 2.0.567 to 2.0.568
+
+
+DEBUG:   commit a475d8388817418d631be95a373d963c025c9da2
+DEBUG:   Author: ************* <jenkins-x@googlegroups.com>
+DEBUG:   Date: Wed Aug  7 20:45:58 2019
+DEBUG:       chore(deps): bump https://github.com/jenkins-x/**.git from 2.0.567 to 2.0.568
+
+Command run was `./build/linux/** step create pr brew --version 2.0.568 --sha 768c5370201b03e58c1d98f683961e0efaece1780d08b47b74f10f224124730e --repo https://github.com/jenkins-x/homebrew-**.git --src-repo https://github.com/jenkins-x/**.git`
+
+
+
+WARNING: Failed to enrich commit a475d8388817418d631be95a373d963c025c9da2 with issues: users.jenkins.io "x-0" already exists
+WARNING: Failed to enrich commit a475d8388817418d631be95a373d963c025c9da2 with issues: users.jenkins.io "x-0" already exists
+Finding issues in commit messages using git format
+DEBUG: Generated release notes:
+
+## Changes
+
+### Chores
+
+* deps: bump https://github.com/jenkins-x/**.git from 2.0.567 to 2.0.568
+
+WARNING: No release found for jenkins-x/homebrew-** and tag v0.0.426 so creating a new release
+Updated the release information at https://github.com/jenkins-x/homebrew-**/releases/tag/v0.0.426
+Uploaded /workspace/source/dependency-matrix/matrix.yaml to release asset https://github.com/jenkins-x/homebrew-**/releases/download/v0.0.426/dependency-matrix.yaml
+generated: /workspace/source/templates/release.yaml
+Created Release homebrew-**-0-0-426 resource in namespace **
+Updating PipelineActivity jenkins-x-homebrew-**-master-410 with version 0.0.426
