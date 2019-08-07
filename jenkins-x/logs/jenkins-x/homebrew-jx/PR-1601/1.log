@@ -7,3 +7,29 @@ Unable to retrieve container logs for docker://58f5ad9b59c41d774aca3542e68384159
 Step: build-step-place-tools:
 
 Unable to retrieve container logs for docker://397b15980f60300f5ae610c176f15031e2c52e4eafe958113818d66375d73e7d
+Step: build-step-git-source-jenkins-x-homebrew-**-pr-1601-t-sjgkq:
+
+{"level":"warn","ts":1565211611.7550683,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565211615.8216934,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/homebrew-** @ a475d8388817418d631be95a373d963c025c9da2 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-07T21:00:16Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:ad7e30e5c89042a0bf585323d7c77fb005cdf1f4,1601:a475d8388817418d631be95a373d963c025c9da2
+ran git fetch --unshallow origin a475d8388817418d631be95a373d963c025c9da2: ad7e30e5c89042a0bf585323d7c77fb005cdf1f4: in 
+ran git checkout master in 
+ran git reset --hard ad7e30e5c89042a0bf585323d7c77fb005cdf1f4 in 
+ran clean --force -d . in 
+ran git merge a475d8388817418d631be95a373d963c025c9da2 in 
+Step: build-step-prebuild-check-shasum:
+
+2.0.568
+768c5370201b03e58c1d98f683961e0efaece1780d08b47b74f10f224124730e
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   613    0   613    0     0   1335      0 --:--:-- --:--:-- --:--:--  1335
+  0 65.4M    0  610k    0     0   466k      0  0:02:23  0:00:01  0:02:22  466k 48 65.4M   48 31.5M    0     0  13.6M      0  0:00:04  0:00:02  0:00:02 31.0M100 65.4M  100 65.4M    0     0  20.0M      0  0:00:03  0:00:03 --:--:-- 33.0M
+**-darwin-amd64.tar.gz: OK
+Step: build-step-build-dummy-build:
+
+PR
