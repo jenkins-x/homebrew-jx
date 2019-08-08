@@ -1,0 +1,70 @@
+Step: build-step-credential-initializer-k75r7:
+
+{"level":"warn","ts":1565288810.912752,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565288810.9134946,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-46nw4:
+
+{"level":"warn","ts":1565288813.035057,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565288813.043046,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-homebrew-**-master-te-7ssmf:
+
+{"level":"warn","ts":1565288817.930345,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565288819.6038296,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/homebrew-** @ v0.0.430 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T18:27:00Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:5632aab4235aa2f861fe3cce1a9db0993dcbe127
+time="2019-08-08T18:27:00Z" level=warning msg="no SHAs to merge, falling back to initial cloned commit"
+Step: build-step-setup-**-git-credentials:
+
+Generated Git credentials file /builder/home/git/credentials
+Step: build-step-build-dummy-release:
+
+Release
+Step: build-step-build-changelog:
+
+Converted /workspace/source to an unshallow repository
+DEBUG: Using helmBinary helm with feature flag: template-mode
+Generating change log from git ref 2c0fc58eea0398572f4fa2f26011518afd66433a => 5632aab4235aa2f861fe3cce1a9db0993dcbe127
+DEBUG: merging pipeline secrets with local secrets
+DEBUG: merging pipeline secrets with local secrets
+DEBUG: Found commits:
+DEBUG:   commit 5632aab4235aa2f861fe3cce1a9db0993dcbe127
+DEBUG:   Author: ************* <35031835+*************@users.noreply.github.com>
+DEBUG:   Date: Thu Aug  8 19:23:15 2019
+DEBUG:       
+Merge pull request #1606 from *************/bump-brew-version-4a7e78a8-ba09-11e9-82a5-aa69d846b024
+
+chore(deps): bump https://github.com/jenkins-x/**.git from 2.0.573 to 2.0.574
+
+
+DEBUG:   commit 88718d834591c58ce37e4271019a44d75c3cb17d
+DEBUG:   Author: ************* <jenkins-x@googlegroups.com>
+DEBUG:   Date: Thu Aug  8 18:21:07 2019
+DEBUG:       chore(deps): bump https://github.com/jenkins-x/**.git from 2.0.573 to 2.0.574
+
+Command run was `./build/linux/** step create pr brew --version 2.0.574 --sha cfe8e51c98581fa77b98ec7ac62e9ddc4388083b206ce243dc3636fe994266f7 --repo https://github.com/jenkins-x/homebrew-**.git --src-repo https://github.com/jenkins-x/**.git`
+
+
+
+WARNING: Failed to enrich commit 88718d834591c58ce37e4271019a44d75c3cb17d with issues: users.jenkins.io "x-0" already exists
+WARNING: Failed to enrich commit 88718d834591c58ce37e4271019a44d75c3cb17d with issues: users.jenkins.io "x-0" already exists
+Finding issues in commit messages using git format
+DEBUG: Generated release notes:
+
+## Changes
+
+### Chores
+
+* deps: bump https://github.com/jenkins-x/**.git from 2.0.573 to 2.0.574
+
+WARNING: No release found for jenkins-x/homebrew-** and tag v0.0.430 so creating a new release
+Updated the release information at https://github.com/jenkins-x/homebrew-**/releases/tag/v0.0.430
+Uploaded /workspace/source/dependency-matrix/matrix.yaml to release asset https://github.com/jenkins-x/homebrew-**/releases/download/v0.0.430/dependency-matrix.yaml
+generated: /workspace/source/templates/release.yaml
+Created Release homebrew-**-0-0-430 resource in namespace **
+Updating PipelineActivity jenkins-x-homebrew-**-master-415 with version 0.0.430
+Updated PipelineActivities jenkins-x-homebrew-**-master-415 with release notes URL: https://github.com/jenkins-x/homebrew-**/releases/tag/v0.0.430
