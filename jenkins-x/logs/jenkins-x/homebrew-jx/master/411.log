@@ -1,0 +1,31 @@
+Step: build-step-credential-initializer-9r9lw:
+
+{"level":"warn","ts":1565224238.25559,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565224238.259214,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-rpxs2:
+
+{"level":"warn","ts":1565224240.5198388,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565224240.521533,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-homebrew-**-master-te-j6hvc:
+
+{"level":"warn","ts":1565224242.4055767,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565224243.9787877,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/homebrew-** @ v0.0.427 in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T00:30:45Z" level=info msg="got "
+time="2019-08-08T00:30:45Z" level=warning msg="no SHAs to merge, falling back to initial cloned commit"
+Using SHAs from PULL_REFS=master:d7ee57d198eefc3a76108e6914d89603d7263b29
+Step: build-step-setup-**-git-credentials:
+
+Generated Git credentials file /builder/home/git/credentials
+Step: build-step-build-dummy-release:
+
+Release
+Step: build-step-build-changelog:
+
+Converted /workspace/source to an unshallow repository
+DEBUG: Using helmBinary helm with feature flag: template-mode
+Generating change log from git ref 494c98ebd14c6a16fad51e8bd9a8967098de8870 => d7ee57d198eefc3a76108e6914d89603d7263b29
