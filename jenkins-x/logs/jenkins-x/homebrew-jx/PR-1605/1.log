@@ -1,0 +1,36 @@
+Step: build-step-credential-initializer-948qx:
+
+{"level":"warn","ts":1565282035.2426622,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565282035.2443042,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-working-dir-initializer-xc8cl:
+
+{"level":"warn","ts":1565282036.6889858,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1565282036.7000222,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-source-jenkins-x-homebrew-**-pr-1605-t-94svd:
+
+{"level":"warn","ts":1565282039.4048584,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1565282041.961191,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/jenkins-x/homebrew-** @ 7bf77037b24aabe49f3def77639e6a6d45de1e8c in path /workspace/source"}
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-08-08T16:34:02Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:53e1ccff1e8ecc8d81cf710bd54c4ae5cfaf3219,1605:7bf77037b24aabe49f3def77639e6a6d45de1e8c
+ran git fetch --unshallow origin 7bf77037b24aabe49f3def77639e6a6d45de1e8c: 53e1ccff1e8ecc8d81cf710bd54c4ae5cfaf3219: in 
+ran git checkout master in 
+ran git reset --hard 53e1ccff1e8ecc8d81cf710bd54c4ae5cfaf3219 in 
+ran clean --force -d . in 
+ran git merge 7bf77037b24aabe49f3def77639e6a6d45de1e8c in 
+Step: build-step-prebuild-check-shasum:
+
+2.0.573
+d0aa7274250440a31432d010b950efdf0d3b46f407f9c97f14410a1b0021fe58
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   613    0   613    0     0   1464      0 --:--:-- --:--:-- --:--:--  1463
+  3 65.4M    3 2224k    0     0  1580k      0  0:00:42  0:00:01  0:00:41 1580k 54 65.4M   54 35.4M    0     0  14.8M      0  0:00:04  0:00:02  0:00:02 33.6M100 65.4M  100 65.4M    0     0  20.1M      0  0:00:03  0:00:03 --:--:-- 34.4M
+**-darwin-amd64.tar.gz: OK
+Step: build-step-build-dummy-build:
+
+PR
