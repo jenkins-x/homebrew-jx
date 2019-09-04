@@ -2,10 +2,10 @@
 class Jx < Formula
   desc "A tool to install and interact with Jenkins X on your Kubernetes cluster."
   homepage "https://jenkins-x.io/"
-  version "2.0.677"
+  version "2.0.678"
 
   url "http://github.com/jenkins-x/jx/releases/download/v#{version}/jx-darwin-amd64.tar.gz"
-  sha256 "0818b06a5b921ab426d3638ad2159ae80c2c8cf922297a3dc4d5c56b03d2f9de"
+  sha256 "7b5ff1de320177432b921aaded61f2fb74e3ff52a881212e71a51058ee608e6b"
 
   def install
     bin.install name
