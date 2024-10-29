@@ -1,9 +1,9 @@
 cask "jx" do
   arch arm: "arm64", intel: "amd64"
 
-  version "3.10.169"
-  sha256 arm:   "13655c6108e8d0714ef4b8fd77a1f8b81c32f46e5a23042e14a9337b00924cb6",
-         intel: "fcecb9e5d66337b1c848fcdca3778f5d12764c96e3bea9086232e79d66169f6d"
+  version "3.10.170"
+  sha256 arm:   "bcf6c165afed586f6ea8c6fff442b6d01e6cfcdfc5a0c6797f176442b9f1e824",
+         intel: "f5e3798bc26da923984f973973eb4e47bc020724d61882c775f67633eddff5ff"
 
   url "http://github.com/jenkins-x/jx/releases/download/v#{version}/jx-darwin-#{arch}.tar.gz"
 
